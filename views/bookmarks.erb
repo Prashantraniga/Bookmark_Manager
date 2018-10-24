@@ -9,7 +9,11 @@
     <div style="margin-right: 215px; margin-left: 215px; background-color: blue">
     <ul>
     <% @bookmarks.each do |bookmark| %>
-      <li><%= bookmark %></li>
+      <li>
+        <a href="<%= bookmark.url %>">
+          <%= bookmark.title %>
+        </a>
+      </li>
     <% end %>
     </ul>
     </div>
